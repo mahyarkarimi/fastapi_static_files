@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <title>Item Details</title>
+</head>
+<body>
+    <h1>Directory listing for {{ path }}</h1>
+    <hr />
+    <ul style="width:100%">
+        {% for i in dirs %}
+        <li>
+          <a href="{{ i['href'] }}">{{i['text']}}/</a>
+        </li>
+        {% endfor %}
+
+        {% for i in files %}
+         <li>
+             <a href="{{ i['href'] }}">{{i['text']}}</a>
+         </li>
+        {% endfor %}
+        </ul>
+    <hr />
+
+</body>
+</html>

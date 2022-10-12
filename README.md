@@ -1,0 +1,1 @@
+$ FastAPI Static File Serve
