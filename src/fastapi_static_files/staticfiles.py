@@ -2,7 +2,6 @@ import os
 import stat
 
 import anyio
-from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from starlette.datastructures import URL
@@ -10,10 +9,8 @@ from starlette.exceptions import HTTPException
 from starlette.responses import FileResponse, RedirectResponse, Response
 from starlette.types import Scope
 
-app = FastAPI()
-
-templates = Jinja2Templates(directory="templates")
-
+templates_path = os.path.dirname(os.path.abspath(__file__)) + '/templates'
+templates = Jinja2Templates(directory=templates_path)
 
 class StaticIndexedFiles(StaticFiles):
     async def get_response(self, path: str, scope: Scope) -> Response:

@@ -16,6 +16,10 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+    "fastapi",
+    "jinja2"
+]
 
 [project.urls]
 "Homepage" = "https://github.com/mahyarkarimi/fastapi_static_files.git"
