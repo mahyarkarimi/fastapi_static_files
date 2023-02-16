@@ -22,5 +22,5 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/mahyarkarimi/fastapi_static_files.git"
+"Homepage" = "https://github.com/mahyarkarimi/fastapi_static_files"
 "Bug Tracker" = "https://github.com/mahyarkarimi/fastapi_static_files/issues"

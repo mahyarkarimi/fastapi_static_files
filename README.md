@@ -15,3 +15,7 @@ app = FastAPI()
 
 app.mount('/public', StaticIndexedFiles(directory="./public"), name="static")
 ```
+
+## 🔗 Links
+
+- [Pypi Page](https://pypi.org/project/fastapi-static-files/0.1.0/)
